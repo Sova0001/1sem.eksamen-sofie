@@ -13,34 +13,52 @@
   </head>
   <body>
     <header>
-      <nav class="menu">
-        <a href="ommig.html">OM MIG</a>
-        <a href="grundlæggendeweb.html">GRUNDLÆGGENDE WEB</a>
-        <a href="grundlæggendeux.html">GRUNDLÆGGENDE UX</a>
-        <a href="animation.html">ANIMATION</a>
-        <a href="grundlæggendeindhold.html">GRUNDLÆGGENDE INDHOLD</a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logoforside.svg" alt="logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="grundlæggendeweb.html">GRUNDLÆGGENDE WEB</a></li>
+          <li><a href="grundlæggendeux.html">GRUNDLÆGGENDE UX</a></li>
+          <li><a href="animation.html">ANIMATION</a></li>
+          <li><a href="grundlæggendeindhold.html">GRUNDLÆGGENDE INDHOLD</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
     </header>
+
     <main class="om_mig">
-      <div class="om_mig_tekst">
-        <h1>OM MIG</h1>
-        <p>
-          Mit navn er Sofie Àsta Valdimarsson, jeg er 25 år og bor i Valby i en
-          lejlighed sammen med min lillebror og to venner. Jeg begyndte
-          oprindeligt på uddannelsen Markedsføringsøkonom i sommeren 2024, men
-          savnede et mere kreativt fokus og valgte derfor at søge ind på
-          Multimediedesign på EK, hvor jeg startede i sommeren 2025. Ved siden
-          af studiet arbejder jeg hos Maanesten, hvor jeg har været ansat i 2,5
-          år. I min fritid nyder jeg at være sammen med min kæreste, venner og
-          familie, og når jeg har tid for mig selv, elsker jeg at fordybe mig i
-          kreative projekter som hækling, tegning samt video- og
-          billedredigering.
-        </p>
+      <div class="om_mig_tekst_wrapper">
+        <div class="om_mig_tekst">
+          <h1 class="om_mig_overskrift">OM MIG</h1>
+          <p>
+            Mit navn er Sofie Àsta Valdimarsson, jeg er 25 år og bor i Valby i
+            en lejlighed sammen med min lillebror og to venner. Jeg begyndte
+            oprindeligt på uddannelsen Markedsføringsøkonom i sommeren 2024, men
+            savnede et mere kreativt fokus og valgte derfor at søge ind på
+            Multimediedesign på EK, hvor jeg startede i sommeren 2025. Ved siden
+            af studiet arbejder jeg hos Maanesten, hvor jeg har været ansat i
+            2,5 år. I min fritid nyder jeg at være sammen med min kæreste,
+            venner og familie, og når jeg har tid for mig selv, elsker jeg at
+            fordybe mig i kreative projekter som hækling, tegning samt video- og
+            billedredigering.
+          </p>
+          <a class="knap" href="cv-sofie.pdf" target="_blank">CV</a>
+        </div>
       </div>
 
       <div class="portræt">
         <img src="portrætsofie.webp" alt="portræt" />
       </div>
     </main>
+    <script src="menu.js"></script>
   </body>
 </html>

@@ -13,73 +13,106 @@
   </head>
   <body>
     <header>
-      <nav class="menu">
-        <a href="ommig.html">OM MIG</a>
-        <a href="grundlæggendeweb.html">GRUNDLÆGGENDE WEB</a>
-        <a href="grundlæggendeux.html">GRUNDLÆGGENDE UX</a>
-        <a href="animation.html">ANIMATION</a>
-        <a href="grundlæggendeindhold.html">GRUNDLÆGGENDE INDHOLD</a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logoforside.svg" alt="logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="grundlæggendeweb.html">GRUNDLÆGGENDE WEB</a></li>
+          <li><a href="grundlæggendeux.html">GRUNDLÆGGENDE UX</a></li>
+          <li><a href="animation.html">ANIMATION</a></li>
+          <li><a href="grundlæggendeindhold.html">GRUNDLÆGGENDE INDHOLD</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
     </header>
-
-    <section>
+    <main>
       <h1 class="tekst_i_midten">GRUNDLÆGGENDE UX</h1>
-      <p>
-        Jeg fik til opgave at vælge et emne, som jeg har viden om, interesse for
-        og et netværk af potentielle brugere inden for. Til dette valgte jeg at
-        lave en rejseguide til Island. Min viden og interesse for emnet kommer
-        af, at jeg er halv islænding og derfor har brugt meget tid på Island.
-        Jeg har både været der på ferie, hvor jeg har besøgt familie og rejst
-        rundt i hele landet, samt arbejdet som au pair. Derudover har jeg et
-        netværk af potentielle brugere, da jeg ofte er blevet spurgt om, hvad
-        man skal opleve og se på Island, og i den forbindelse har jeg tidligere
-        lavet lange anbefalingslister.
-      </p>
+      <section class="grid_1_1">
+        <div>
+          <p>
+            I tema 3 fik jeg til opgave at vælge et emne, som jeg har viden om,
+            interesse for og et netværk af potentielle brugere inden for. Til
+            dette valgte jeg at lave en rejseguide til Island. Min viden og
+            interesse for emnet kommer af, at jeg er halv islænding og derfor
+            har brugt meget tid på Island. Jeg har både været der på ferie, hvor
+            jeg har besøgt familie og rejst rundt i hele landet, samt arbejdet
+            som au pair. Derudover har jeg et netværk af potentielle brugere, da
+            jeg ofte er blevet spurgt om, hvad man skal opleve og se på Island,
+            og i den forbindelse har jeg tidligere lavet lange
+            anbefalingslister.
+          </p>
 
-      <p>
-        Derudover lavede jeg en dataindsamling ved hjælp af flere forskellige
-        metoder: desk research, observation, interview og survey.
-      </p>
+          <p>
+            Derudover lavede jeg en dataindsamling ved hjælp af flere
+            forskellige metoder: desk research, observation, interview og
+            survey.
+          </p>
 
-      <p>
-        I min desk research undersøgte jeg allerede eksisterende rejseguides til
-        Island. Her fandt jeg blandt andet turistbureauers hjemmesider, som i
-        høj grad promoverer betalingsoplevelser. Derudover fandt jeg blogs med
-        beskrivelser af steder på Island, men disse fokuserede primært på de
-        klassiske turistattraktioner. Endelig fandt jeg også rejseguides, som
-        krævede betaling for at få adgang.
-      </p>
-      <p>
-        Gennem observation oplevede jeg, at mange søger information via Google
-        eller sociale medier som Instagram og TikTok. På Google landede brugerne
-        ofte på de samme sider, som jeg fandt i min desk research, mens sociale
-        medier primært viste de klassiske turiststeder.
-      </p>
-      <p>
-        Interviewdelen gav mig en dybere indsigt i brugernes behov, mens
-        surveyen havde til formål at indsamle data fra flere personer på én
-        gang. På denne måde fik jeg mere konkret viden, som jeg kunne inddrage i
-        min design- og procesudvikling.
-      </p>
-      <p>
-        Jeg fandt blandt andet ud af, at mange eksisterende hjemmesider
-        promoverer de samme seværdigheder og betalte ture. Derfor var mit formål
-        at lave en overskuelig og gratis hjemmeside med inspiration til andres
-        rejser til Island.
-      </p>
-      <p>
-        Herefter gik jeg i gang med designfasen. Jeg lavede et styletile med
-        jordnære farver, da jeg vidste, at hjemmesiden skulle indeholde mange
-        farverige billeder. Jeg udarbejdede wireframes og en prototype i Figma,
-        så jeg havde en klar idé, inden jeg begyndte at kode.
-      </p>
-      <p>
-        Jeg stødte på udfordringer med billedoptimering, da mine billeder ikke
-        blev konverteret til WebP, men forblev i JPEG-format. Det medfører
-        længere loadingtid på hjemmesiden. Jeg har siden fået en bedre
-        forståelse for vigtigheden af at konvertere billeder til WebP, da det
-        giver bedre performance og billedkvalitet.
-      </p>
-    </section>
+          <p>
+            I min desk research undersøgte jeg allerede eksisterende rejseguides
+            til Island. Her fandt jeg blandt andet turistbureauers hjemmesider,
+            som i høj grad promoverer betalingsoplevelser. Derudover fandt jeg
+            blogs med beskrivelser af steder på Island, men disse fokuserede
+            primært på de klassiske turistattraktioner. Endelig fandt jeg også
+            rejseguides, som krævede betaling for at få adgang.
+          </p>
+          <p>
+            Gennem observation oplevede jeg, at mange søger information via
+            Google eller sociale medier som Instagram og TikTok. På Google
+            landede brugerne ofte på de samme sider, som jeg fandt i min desk
+            research, mens sociale medier primært viste de klassiske
+            turiststeder.
+          </p>
+          <p>
+            Interviewdelen gav mig en dybere indsigt i brugernes behov, mens
+            surveyen havde til formål at indsamle data fra flere personer på én
+            gang. På denne måde fik jeg mere konkret viden, som jeg kunne
+            inddrage i min design- og procesudvikling.
+          </p>
+          <p>
+            Jeg fandt blandt andet ud af, at mange eksisterende hjemmesider
+            promoverer de samme seværdigheder og betalte ture. Derfor var mit
+            formål at lave en overskuelig og gratis hjemmeside med inspiration
+            til andres rejser til Island.
+          </p>
+        </div>
+        <img src="brainstorm.webp" alt="brainstorm" />
+      </section>
+
+      <section class="grid_1_1">
+        <img src="guidetilisland.webp" alt="guidetilisland" />
+        <div>
+          <p>
+            Herefter gik jeg i gang med designfasen. Jeg lavede et styletile med
+            jordnære farver, da jeg vidste, at hjemmesiden skulle indeholde
+            mange farverige billeder. Jeg udarbejdede wireframes og en prototype
+            i Figma, så jeg havde en klar idé, inden jeg begyndte at kode.
+          </p>
+          <p>
+            Jeg stødte på udfordringer med billedoptimering, da mine billeder
+            ikke blev konverteret til WebP, men forblev i JPEG-format. Det
+            medfører længere loadingtid på hjemmesiden. Jeg har siden fået en
+            bedre forståelse for vigtigheden af at konvertere billeder til WebP,
+            da det giver bedre performance og billedkvalitet.
+          </p>
+          <a
+            class="knap"
+            href="https://sova0001.github.io/emnesite/"
+            target="_blank"
+            >Emnesite</a
+          >
+        </div>
+      </section>
+    </main>
+    <script src="menu.js"></script>
   </body>
 </html>

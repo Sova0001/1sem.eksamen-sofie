@@ -1,41 +1,45 @@
+/* generelt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fffbf3;
 }
 
 main {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* forside - portfolio */
-.overskrift {
-  font-size: 180px;
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 20px; /* mellemrum mellem bogstaverne */
-  margin-top: 400px; /* rykker overskrift længere ned */
-  line-height: 160px;
-  margin-bottom: 40px;
-}
-
-/* h1'er */
-.tekst_i_midten {
-  font-size: 72px; /* overskrift stor */
-  text-align: center; /* teksten i midten */
-  margin: 80px 0 40px; /* luft over og under */
-}
-
 /* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 8px 0 0;
+}
+
+/* sofies portfolio logo */
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
+}
+
+/**/
 .menu {
   position: sticky;
-  margin-left: 350px;
+  padding: 10px 24px 24px 24px;
   margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
-  background-color: #fffbf3;
+  list-style: none;
+  gap: 36px;
 }
 
 .menu a {
@@ -44,9 +48,230 @@ main {
   font-size: 20px;
   letter-spacing: 0.5px;
 }
+.menu li {
+  text-decoration: none;
+}
 
 .menu a:hover {
   color: grey;
 }
 
+/* burger menu */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #fffbf3;
+    position: absolute;
+    top: 70px; /* rykker menu under header*/
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+p {
+  margin-bottom: 20px; /* for at få mellemrum mellem p, knap*/
+}
+
+/* forside - portfolio */
+.overskrift {
+  font-size: 80px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 8px; /* mellemrum mellem bogstaverne */
+  margin-top: 400px; /* rykker overskrift længere ned */
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.undertekst_forside {
+  font-weight: bolder; /* tykkere skrift*/
+}
+
+.forside {
+  background-image: url("blomsterbaggrund.svg");
+  background-repeat: no-repeat;
+  background-size: cover; /* dækker det hele */
+  height: 100vh; /* forsiden vil altid fylde det den har til rådighed*/
+}
+
+@media screen and (min-width: 800px) {
+  .overskrift {
+    font-size: 180px;
+    letter-spacing: 20px; /* mellemrum mellem bogstaverne */
+    line-height: 160px;
+    margin-bottom: 40px;
+    margin-top: 300px; /* rykker overskrift længere ned */
+  }
+}
+
+/* h1'er */
+.tekst_i_midten {
+  font-size: 30px; /* overskrift stor */
+  text-align: center; /* teksten i midten */
+  margin: 20px 0 40px; /* luft over og under */
+}
+
+@media screen and (min-width: 600px) {
+  .tekst_i_midten {
+    font-size: 72px;
+  }
+}
+
 /*om mig side*/
+.om_mig_overskrift {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.om_mig {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: calc(100vh - 72px); /*fuld højde hele skærmen - topmenu højde*/
+  background-image: url("baggrundslyserødblomst.svg");
+  background-repeat: no-repeat; /* kun en blomst */
+  background-position: 20% 60%; /* placering lodret og vandret */
+  background-size: 120%; /* størrelsen på blomsten */
+}
+
+.om_mig_tekst_wrapper {
+  margin-top: 72px; /* afstand fra toppen */
+  width: 100%; /* hvor meget det fylder */
+  display: flex;
+  justify-content: flex-end; /* går til slutningen af div */
+}
+
+.om_mig_tekst {
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+.portræt {
+  margin-top: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* placering vandret */
+  align-items: flex-end; /* placering lodret */
+}
+
+.portræt img {
+  height: 100%;
+  width: auto;
+}
+
+main.om_mig {
+  max-width: none;
+}
+
+/* knapper */
+.knap {
+  background-color: #98918c;
+  color: #e4dcd6;
+  display: flex;
+  width: 100px; /* vandret */
+  height: 40px; /* lodret */
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* runde kanter*/
+  font-weight: bolder; /* gør skriften tykkere */
+}
+
+@media screen and (min-width: 800px) {
+  .om_mig {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .om_mig_tekst {
+    max-width: 650px;
+  }
+}
+
+/* grundlæggende ux */
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px; /* mellemrum */
+  margin-bottom: 40px;
+  padding: 0 8px;
+}
+
+.grid_1_1 img {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .grid_1_1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* grundlæggende web */
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px; /* mellemrum */
+  padding: 0 8px;
+}
+
+.grid_1 img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .grid_1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* animation */

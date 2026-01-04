@@ -13,35 +13,55 @@
   </head>
   <body>
     <header>
-      <nav class="menu">
-        <a href="ommig.html">OM MIG</a>
-        <a href="grundlæggendeweb.html">GRUNDLÆGGENDE WEB</a>
-        <a href="grundlæggendeux.html">GRUNDLÆGGENDE UX</a>
-        <a href="animation.html">ANIMATION</a>
-        <a href="grundlæggendeindhold.html">GRUNDLÆGGENDE INDHOLD</a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logoforside.svg" alt="logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="grundlæggendeweb.html">GRUNDLÆGGENDE WEB</a></li>
+          <li><a href="grundlæggendeux.html">GRUNDLÆGGENDE UX</a></li>
+          <li><a href="animation.html">ANIMATION</a></li>
+          <li><a href="grundlæggendeindhold.html">GRUNDLÆGGENDE INDHOLD</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
     </header>
-
-    <section>
+    <main>
       <h1 class="tekst_i_midten">GRUNDLÆGGENDE WEB</h1>
-      <p>
-        I tema 2 arbejdede jeg med grundlæggende redskaber inden for
-        multimediedesign, herunder HTML og CSS, og lærte at opbygge og
-        strukturere et website. Som en del af studiestartprøven udviklede jeg et
-        responsivt mobilesite bestående af fem sider ud fra et udleveret
-        wireframe og layoutdiagram, med fokus på mobile-first-tilgang, korrekt
-        brug af id- og class-navne samt farver og fonte. CSS blev opdelt i
-        generel.css til styling og layout.css til layout.
-      </p>
+      <section class="grid_1">
+        <div>
+          <p>
+            I tema 2 arbejdede jeg med grundlæggende redskaber inden for
+            multimediedesign, herunder HTML og CSS, og lærte at opbygge og
+            strukturere et website. Som en del af studiestartprøven udviklede
+            jeg et responsivt mobilesite bestående af fem sider ud fra et
+            udleveret wireframe og layoutdiagram, med fokus på
+            mobile-first-tilgang, korrekt brug af id- og class-navne samt farver
+            og fonte. CSS blev opdelt i generel.css til styling og layout.css
+            til layout.
+          </p>
 
-      <p>
-        Gennem forløbet har jeg opnået viden om frontend-teknologier, digitale
-        filformater og multimediedesignerens rolle. Jeg har udviklet færdigheder
-        i at designe og kode semantiske, responsive websites samt anvende
-        værktøjer som Figma og browserens developer tools. Samlet set har jeg
-        opnået kompetencer til selvstændigt at udvikle et funktionelt og
-        professionelt website ud fra et givent oplæg.
-      </p>
-    </section>
+          <p>
+            Gennem forløbet har jeg opnået viden om frontend-teknologier,
+            digitale filformater og multimediedesignerens rolle. Jeg har
+            udviklet færdigheder i at designe og kode semantiske, responsive
+            websites samt anvende værktøjer som Figma og browserens developer
+            tools. Samlet set har jeg opnået kompetencer til selvstændigt at
+            udvikle et funktionelt og professionelt website ud fra et givent
+            oplæg.
+          </p>
+        </div>
+        <img src="mobilesite.webp" alt="mobilesite" />
+      </section>
+    </main>
+    <script src="menu.js"></script>
   </body>
 </html>

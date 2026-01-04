@@ -15,26 +15,47 @@
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
+    <!--favicon-->
+    <link rel="logo" sizes="180x180" href="logoforside.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="logoforside.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="logoforside.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-------->
+
     <title>forside</title>
   </head>
-  <body>
+  <body class="forside">
     <header>
-      <nav class="menu">
-        <a href="ommig.html">OM MIG</a>
-        <a href="grundlæggendeweb.html">GRUNDLÆGGENDE WEB</a>
-        <a href="grundlæggendeux.html">GRUNDLÆGGENDE UX</a>
-        <a href="animation.html">ANIMATION</a>
-        <a href="grundlæggendeindhold.html">GRUNDLÆGGENDE INDHOLD</a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logoforside.svg" alt="logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="grundlæggendeweb.html">GRUNDLÆGGENDE WEB</a></li>
+          <li><a href="grundlæggendeux.html">GRUNDLÆGGENDE UX</a></li>
+          <li><a href="animation.html">ANIMATION</a></li>
+          <li><a href="grundlæggendeindhold.html">GRUNDLÆGGENDE INDHOLD</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
     </header>
+
     <main>
       <section>
         <h1 class="overskrift">PORTFOLIO</h1>
-        <p>
+        <p class="undertekst_forside">
           Af mit første semester på uddannelsen Multimediedesigner på
           Erhvervsakademi København
         </p>
       </section>
     </main>
+    <script src="menu.js"></script>
   </body>
 </html>
