@@ -2,9 +2,21 @@ body {
   background-color: #fffbf3;
 }
 
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 /* forside - portfolio */
 .overskrift {
   font-size: 180px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 20px; /* mellemrum mellem bogstaverne */
+  margin-top: 400px; /* rykker overskrift længere ned */
+  line-height: 160px;
+  margin-bottom: 40px;
 }
 
 /* h1'er */
@@ -17,7 +29,7 @@ body {
 /* header */
 .menu {
   position: sticky;
-  margin-left: 0;
+  margin-left: 350px;
   margin-right: auto;
   display: flex;
   justify-content: space-between;
@@ -36,3 +48,5 @@ body {
 .menu a:hover {
   color: grey;
 }
+
+/*om mig side*/
