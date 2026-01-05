@@ -164,7 +164,13 @@ p {
 
 @media screen and (min-width: 600px) {
   .tekst_i_midten {
-    font-size: 72px;
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .tekst_i_midten {
+    font-size: 52px;
   }
 }
 
@@ -215,8 +221,8 @@ main.om_mig {
 
 /* knapper */
 .knap {
-  background-color: #98918c;
-  color: #e4dcd6;
+  background-color: #c1dbe8;
+  color: #5f7cad;
   display: flex;
   width: 100px; /* vandret */
   height: 40px; /* lodret */
@@ -225,6 +231,9 @@ main.om_mig {
   justify-content: center;
   border-radius: 10px; /* runde kanter*/
   font-weight: bolder; /* gør skriften tykkere */
+}
+.knap:hover {
+  background-color: #b4e1f9; /* mørkere farve når musen kører over */
 }
 
 @media screen and (min-width: 800px) {
@@ -235,6 +244,11 @@ main.om_mig {
   .om_mig_tekst {
     max-width: 650px;
   }
+}
+
+.knapper {
+  display: flex;
+  gap: 12px; /* afstand mellem knapper */
 }
 
 /* grundlæggende ux */
@@ -273,5 +287,3 @@ main.om_mig {
     grid-template-columns: 1fr 1fr;
   }
 }
-
-/* animation */
