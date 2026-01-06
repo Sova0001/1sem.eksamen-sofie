@@ -287,3 +287,16 @@ main.om_mig {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* footer */
+.footer {
+  margin-top: 24px; /* afstand mellem resten af siden og footer */
+  text-align: center;
+  padding: 12px 0; /* top/bund og højre/venstre */
+  background-color: #f2eee6;
+  color: #000000;
+  line-height: 0.5; /* afstand mellem tekst */
+}
+.footer p {
+  margin: 16px 0; /* over/under tekst og i siderne */
+}
